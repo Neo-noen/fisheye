@@ -39,7 +39,7 @@ default = db.accesschunk('default')
 db.delchunks(default) # Delete the chunk for example
 
 table = fisheye.Table({'test':'data'})
-table.addrecord('something', {'something data':'something something data'}
+table.addrecord('something', {'something data':'something something data'})
 db.makechunks('default') # re making the 'default' chunk
 default = db.accesschunk('default')
 default.write(table) # Override current data with 'table'
